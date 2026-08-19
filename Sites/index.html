@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dala Demo</title>
+  <meta
+    name="description"
+    content="Dala demo landing page inspired by a dark-stage constellation design system."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="intro-screen" aria-hidden="true">
+    <div class="intro-mark">
+      <span class="intro-triangle"></span>
+      <span class="intro-word">Dala</span>
+    </div>
+  </div>
+  <div class="ambient-field" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Dala home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8052ff"></stop>
+              <stop offset="100%" stop-color="#15846e"></stop>
+            </linearGradient>
+          </defs>
+          <path d="M4 25L16 5L28 25H20L16 18L12 25Z" fill="url(#brandGradient)"></path>
+        </svg>
+        <span>Dala</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#team">Team</a>
+        <a href="#journal">Blog</a>
+      </nav>
+
+      <a class="primary-button" href="#access">Request Access</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="layout hero-layout">
+        <div class="hero-copy" data-reveal>
+          <div class="hero-mark">
+            <span class="hero-mark-triangle" aria-hidden="true"></span>
+            <p class="eyebrow">Stop managing knowledge. Start using it.</p>
+          </div>
+          <h1>
+            <span>Unlock</span>
+            <span>collective</span>
+            <span>wisdom.</span>
+          </h1>
+          <p class="lead">
+            Plug into your team's shared brainpower. Ask Dala to instantly find
+            anything or anyone from any workplace system, then focus on your best work
+            with context, conviction and clarity.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#access">Request Access</a>
+            <a class="ghost-link" href="#manifesto">Read the manifesto</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <strong>8+</strong>
+              <span>systems connected</span>
+            </div>
+            <div class="hero-metric">
+              <strong>1 view</strong>
+              <span>for context and action</span>
+            </div>
+            <div class="hero-metric">
+              <strong>0 noise</strong>
+              <span>between question and answer</span>
+            </div>
+          </div>
+          <p class="hero-footnote">Ambient memory, active reasoning, one decisive next step.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <canvas id="brain-canvas" aria-label="Animated particle brain visualization"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="manifesto">
+      <div class="layout split-layout">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Manifesto</p>
+          <h2>Collective wisdom should feel discoverable, not buried.</h2>
+        </div>
+        <div class="section-body" data-reveal>
+          <p>
+            The interface stays quiet so the signal can stay loud. Oversized type,
+            soft hierarchy, and one decisive action create focus instead of feature noise.
+          </p>
+          <p>
+            Knowledge appears as a field, not a folder tree. Questions flow through
+            context, relationships, and patterns that emerge from the whole system.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signals">
+      <div class="layout split-layout reversed">
+        <div class="constellation-panel" aria-hidden="true">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="signal-cluster">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="section-body" data-reveal>
+          <p class="eyebrow">Signals</p>
+          <h2>One view for ambient context, active reasoning, and next actions.</h2>
+          <p>
+            Instead of dashboards, the product presents a guided stage: highlighted
+            evidence, lightweight relationships, and a single violet path forward.
+          </p>
+          <p>
+            The result is a workspace that feels more like reading a thought pattern
+            than managing a database.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="layout split-layout">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Team</p>
+          <h2>Built by people who prefer clarity over interface theater.</h2>
+        </div>
+        <div class="team-grid">
+          <article class="team-card" data-reveal>
+            <div class="portrait portrait-one"></div>
+            <p class="role">Co Founder & CEO</p>
+            <h3>Mira Sol</h3>
+            <p class="team-note">Shapes the product narrative and keeps the interface disciplined enough to stay useful.</p>
+            <a class="ghost-link" href="#access">LinkedIn</a>
+          </article>
+          <article class="team-card" data-reveal>
+            <div class="portrait portrait-two"></div>
+            <p class="role">Co Founder & CTO</p>
+            <h3>Joel Kang</h3>
+            <p class="team-note">Builds the retrieval, reasoning and orchestration layer behind the calm surface.</p>
+            <a class="ghost-link" href="#access">Twitter</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journal">
+      <div class="layout split-layout reversed">
+        <div class="section-body" data-reveal>
+          <p class="eyebrow">Journal</p>
+          <h2>Thoughts, signals and research notes from the edge of the graph.</h2>
+          <p>
+            The blog area stays typographic: no heavy cards, no visual noise, just
+            titles, cadence and enough metadata to invite reading.
+          </p>
+        </div>
+        <div class="journal-list" data-reveal>
+          <a class="journal-item" href="#access">
+            <span class="journal-meta">Aug 2026 / Research</span>
+            <strong>How shared memory changes the speed of good decisions</strong>
+            <span class="journal-summary">Why teams move faster when context is surfaced proactively instead of searched reactively.</span>
+          </a>
+          <a class="journal-item" href="#access">
+            <span class="journal-meta">Jul 2026 / Product</span>
+            <strong>Designing AI interfaces that do less, better</strong>
+            <span class="journal-summary">A case for fewer controls, calmer states and one dominant action inside AI workspaces.</span>
+          </a>
+          <a class="journal-item" href="#access">
+            <span class="journal-meta">Jun 2026 / Systems</span>
+            <strong>From folders to constellations: a new navigation model</strong>
+            <span class="journal-summary">Rethinking workplace discovery as a relationship map instead of a storage problem.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access-section" id="access">
+      <div class="layout access-layout" data-reveal>
+        <p class="eyebrow">Request access</p>
+        <h2>Bring your internal constellation into focus.</h2>
+        <p class="lead small">
+          A single CTA, a single next step. That restraint is part of the demo.
+        </p>
+        <a class="primary-button" href="mailto:hello@dala.demo">hello@dala.demo</a>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
